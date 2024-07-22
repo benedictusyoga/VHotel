@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="reservation-styles.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montaga&display=swap" rel="stylesheet">
+
+    <title>Reservation</title>
+</head>
+<body>
+    <!-- Header -->
+    <header class="Header">
+        <img src="../Images/Logo Gede.jpg" alt="Logo VhoTel">
+        <p class="HeaderText">Indulge in<br> Vintage Elegance</p>
+    </header>
+    
+    <!-- Navigation Bar -->
+    <div class="NavBar">
+        <div class="NavLeft">
+            <a href="../Home Page/home-page.html">Home</a>
+            <a href="../Rooms/rooms.html">Rooms</a>
+            <a href="../Facilities/facilities.html">Facilities</a>
+        </div>
+        <div class="NavRight">
+            <a href="../About Us/aboutus.html" class="AboutUs">About Us</a>
+            <a href="../Reservation/reservation.html" class="BookNow">Book Now</a>
+        </div>
+    </div>
+
+    <!-- Title -->
+    <div class="Title">
+        <div class="TitlePic">
+            <img src="../Images/Title.jpg" alt="">
+        </div>
+        <div class="TitleText">
+            <img src="../Images/Logo Gede.jpg" alt="">
+            <h1>Reservation</h1>
+            <p>Please proceed with the reservation procedure to begin your journey in VhoTel</p>
+        </div>
+    </div>
+
+    <div class="Forms">
+        <form>
+            <label for="name" class="FormName"> Your Name: </label><br>
+            <input type="text" name="name" id="name" placeholder="Your Name Here" required>
+            <br><br>
+
+            <label for="phonenumber" class="FormName">Phone Number: </label><br>
+            <input type="tel" id="phonenumber" name="phonenumber" placeholder="xxxx-xxxx-xxxx" pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}" required>
+            <br><br>
+
+            <label for="email" class="FormName">E-Mail Address: </label><br>
+            <input type="email" id="email" name="email" placeholder="E-Mail must end with @gmail.com" required>
+            <br><br>
+
+            <label for="people" class="FormName">How many People are staying?</label><br>
+            <input type="number" id="people" name="people" placeholder="1-10" min="1" max="10" required>
+            <br><br>
+
+            <label for="checkin" class="FormName">When do you want to check in?</label><br>
+            <input type="datetime-local" id="checkin" name="checkin" required>
+            <br><br><br><br><br>
+
+            <label for="password" class="FormName">Your VhoTel Member Number</label><br>
+            <input type="password" id="password" name="password" placeholder="6 Digits VhoTel Member Number (optional)">
+            <br><br>
+
+            <div class="agree">
+                <input type="checkbox" id="agreement">
+                <label for="agreement">I hereby agree to the Terms of Service of VhoTel and will Checkin on-time</label>
+
+            </div>
+            <br>
+            <br>
+
+            <p id="errormsg" style="display: none;color: red;font-family: 'Montaga';">Please fill all the data</p>
+            <br>
+            <br>
+            <button type="reset">Reset</button>
+            <button type="button" onclick="validateRegistration()" class="Complete">Complete Reservation</button>
+            <br><br>
+            <div class="success">
+                <p id="success" style="display: none ;font-family: 'Montaga';">Data Inputted Successfully!</p><br>
+
+            </div>
+        </form>
+    </div>
+
+    <!-- Footer -->
+   <div class="FooterFrame">
+        <div class="FooterImage"></div>
+        <div class="FooterTxt">
+            <p>Bringing the life of luxury and comfort <br>in all of Nusantara <br><br><br></p>
+            <p class="phone">+62 813 8378 1904</p>
+         </div>
+    </div>
+    
+    
+    <script src="reservationScript.js"></script>
+</body>
+</html>

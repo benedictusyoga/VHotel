@@ -1,0 +1,248 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+body{
+    background-color: white;
+    overflow-x: hidden;
+}
+
+.Background{
+    height:20000px;
+}
+
+/* Navigation Bar */
+.NavBar{
+    z-index: 100;
+    display: flex;
+    font-family: 'Montaga';
+    justify-content: space-between;
+    padding:20px;
+    height: 10px;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.85);
+    top: 0;
+    position: sticky;
+    border: 3px solid #DE9E48;
+    border-top-style: hidden;
+    border-left-style: hidden;
+    border-right-style: hidden;
+}
+.NavBar a{
+    text-decoration: none;
+    font-size: 16px;
+    margin: 20px;
+}
+@media(max-width: 768px){
+    .NavBar a{
+        font-size: 3px;
+        margin:2px;
+    }
+}
+.NavLeft a{
+    color:#372C2E;
+}
+
+.NavLeft a:hover{
+    transition: 0.2s;
+    color:#DE9E48
+}
+.AboutUs{
+    color:#372C2E;
+}
+.AboutUs:hover{
+    transition: 0.2s;
+    color:#DE9E48;
+}
+.BookNow{
+    background-color: #DE9E48;
+    padding-left:30px;
+    padding-right:30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 15px;
+    color:white;
+}
+.BookNow:hover{
+    background-color: #ffdcaa;
+    transition: 0.2s;
+}
+
+/* Header */
+.Header img{
+    padding: 10px;
+    width: 100px;
+}
+.Header{
+    background-color: white;
+    position: relative;
+}
+.HeaderText{
+    font-family: 'Montaga';
+    font-size: 16px;
+    position: absolute;
+    left: 125px;
+    padding-left: -50px;
+    bottom: 50%;
+    transform: translate(0,50%);
+    color: #372C2E;
+
+}
+.HeaderText:hover{
+    margin-left: 1%;
+    transition: 0.2s;
+}
+
+/* Welcome Screen */
+.Welcome{
+    width: 100%;
+    height: 600px;
+    background-image: url("../Images/Title.jpg");
+    background-position: center;
+    background-size:cover;
+}
+.Welcome img{
+    position:absolute;
+    display: flex;
+    background-size: cover;
+    object-fit: cover;
+    height:75%;
+    width: 100%;
+}
+
+/* Title */
+.Title{
+    display: flex;
+    position: relative;
+    margin-top: 50px;
+    margin-right: 20px;
+    top:20px;
+    margin-bottom: 100px;
+}
+.Title img{
+    margin-top: 10px;
+    width: 200px;
+    height:400px;
+    display: flex;
+    object-fit: cover;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.TitleText{
+    position: relative;
+    margin-top: 10%;
+    /* right: 0; */
+    margin-left: 2%;
+    margin-right: 50px;
+}
+.TitleText img{
+    object-fit: cover;
+    width: 35%;
+    height: 66px;
+    justify-content: center;
+    justify-items: center;
+}
+.TitleText h1{
+    font-family: 'Montaga';
+    font-size: 75px;
+    font-weight: 400;
+    color: #372C2E;
+
+}
+.TitleText p{
+    font-family: 'Montaga';
+    width: 100%;
+    font-size: 16px;
+    font-weight: 400;
+    color: #372C2E;
+}
+
+/* Forms */
+.Forms{
+    /* margin-left: 5%; */
+    position: relative;
+    padding-left: 5%;
+    padding-top: 5%;
+    background-color: #fdf7ee;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+    padding-bottom: 5%;
+}
+.Forms input{
+    border-radius: 20px;
+    border: 2px solid #DE9E48;
+    padding-left: 20px;
+    margin-top: 5px;
+    width: 80%;
+    height: 50px;
+}
+.Forms label{
+    font-family: 'Montaga';
+    color:#DE9E48
+}
+.Forms button{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-right: 5px;
+    background-color: #DE9E48;
+    border-radius: 25px;
+    border: 2px hidden #DE9E48;
+    font-family: 'Montaga';
+    color: white;
+    font-size: 20px;
+}
+.Forms button:hover{
+    background-color: #f1c58a;
+    transition: 0.2s;
+}
+.agree{
+    /* display: flex; */
+    position: relative;
+}
+.agree input{
+    width: 50px;
+}
+.agree label{
+    position: absolute;
+    bottom: 25%;
+    padding-left: 10px;
+}
+.success{
+    position: relative;
+    margin-top: 20px;
+}
+.success p{
+    background-color: #68dc64;
+    width: 20%;
+    text-align: center;
+    padding: 20px;
+    border-radius: 20px;
+    color: white;
+}
+
+/* Footer */
+.FooterFrame{
+    background-color: #372C2E;
+    height: 300px;
+    margin-top: 200px;
+}
+.FooterImage{
+    background-image: url("../Images/LogoPutih.png");
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 100%;
+    /* z-index: 100; */
+    background-position: center;
+    background-size:contain
+}
+.FooterTxt{
+    text-align: center;
+    font-family: 'Montaga';
+    color:white;
+    position: relative;
+    bottom: 50px;
+}
